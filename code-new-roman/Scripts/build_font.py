@@ -2,7 +2,8 @@
 """
 Build one Code New Roman style: UFO -> symbols/braille -> Fira Code ligatures -> OTF+TTF.
 
-usage: fontforge -lang=py -script Scripts/build_font.py SRC.ufo OUTDIR
+usage: fontforge -lang=py -script Scripts/build_font.py lig SRC.ufo OUT.sfd
+       fontforge -lang=py -script Scripts/build_font.py gen OUT.sfd OUTDIR
 env:   DEJAVU_DIR, CASCADIA_DIR (donor glyphs), FIRA_DIR (FiraCode-*.ttf/otf),
        LIGATURIZER_DIR (checkout providing ligaturize.py + ligatures.py)
 Metrics are derived from the font itself (cell width, cap height, centre of the
@@ -124,14 +125,34 @@ def add_ligatures(font, weight):
     fira.close()
 
 
-def main(src, outdir):
+def stage_ligatures(src, sfd):
+    """Stage 1: UFO -> SFD with Fira Code ligatures. Runs in its own FontForge process:
+    generating in the same process after LigatureCreator corrupts the heap."""
     font = fontforge.open(src)
-    font.reencode('unicodefull')  # UFO opens with a custom encoding; slots must equal code points
+    weight = 'bold' if font.os2_weight >= 700 else 'regular'
+    add_ligatures(font, weight)
+    font.save(sfd)
+
+
+def stage_generate(sfd, outdir):
+    """Stage 2: symbols/braille, cleanup, OTF + TTF."""
+    font = fontforge.open(sfd)
+    font.reencode('unicodefull')  # slots must equal code points for the symbol import
     weight = 'bold' if font.os2_weight >= 700 else 'regular'
     upos, uwidth = font.upos, font.uwidth
     import_symbols(font, weight)
-    add_ligatures(font, weight)
     font.upos, font.uwidth = upos, uwidth
+
+    for glyph in font.glyphs():  # same cleanup as the monofoki/fantasque builds
+        glyph.unlinkRef()
+        glyph.removeOverlap()
+        glyph.round()
+        glyph.addExtrema('all')
+        if glyph.validate() & 0x8 == 0x8:
+            glyph.correctDirection()
+        glyph.removeOverlap()
+        glyph.round()
+        glyph.addExtrema('all')
 
     os.makedirs(outdir, exist_ok=True)
     base = os.path.join(outdir, font.fontname)
@@ -144,4 +165,8 @@ def main(src, outdir):
     font.close()
 
 
-main(sys.argv[1], sys.argv[2])
+{'lig': stage_ligatures, 'gen': stage_generate}[sys.argv[1]](sys.argv[2], sys.argv[3])
+# FontForge's teardown double-frees after LigatureCreator ("free(): double free"), killing the
+# process with SIGABRT although the output is already written. Skip teardown.
+sys.stdout.flush()
+os._exit(0)

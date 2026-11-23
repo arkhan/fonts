@@ -1,6 +1,6 @@
 # Build environment for Code New Roman: symbols, Fira Code ligatures, Nerd Font patch.
 # Pinned donor fonts/tools; run via ./build.sh
-FROM docker.io/library/debian:bookworm-slim
+FROM docker.io/library/debian:trixie-slim
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         ca-certificates curl unzip git fontconfig \

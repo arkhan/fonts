@@ -6,7 +6,9 @@ cd "$(dirname "$0")/.."
 
 work=.font-build; rm -rf "$work/out"; mkdir -p "$work/out" export/nerd
 for u in Sources/*.ufo; do
-    fontforge -quiet -lang=py -script Scripts/build_font.py "$u" "$work/out"
+    sfd="$work/$(basename "$u" .ufo).sfd"
+    fontforge -quiet -lang=py -script Scripts/build_font.py lig "$u" "$sfd"
+    fontforge -quiet -lang=py -script Scripts/build_font.py gen "$sfd" "$work/out"
 done
 
 PATCHER_DIR=${PATCHER_DIR:-$work/patcher}
@@ -29,4 +31,5 @@ for f in "$work"/out/*.otf "$work"/out/*.ttf; do
 done
 wait
 python3 Scripts/rename_family.py "Code New Roman" export/nerd/*
+for e in otf ttf; do [ -f export/nerd/CodeNewRoman.$e ] && mv export/nerd/CodeNewRoman.$e export/nerd/CodeNewRoman-Regular.$e; done
 python3 Scripts/terminal_tune.py export/nerd/*
