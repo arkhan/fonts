@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="F.superior" format="1">
+  <advance width="1126"/>
+  <outline>
+    <contour>
+      <point x="998" y="1630" type="line"/>
+      <point x="688" y="1630" type="line"/>
+      <point x="647" y="1418" type="line"/>
+      <point x="941" y="1418" type="line"/>
+      <point x="926" y="1338" type="line"/>
+      <point x="632" y="1338" type="line"/>
+      <point x="575" y="1045" type="line"/>
+      <point x="469" y="1045" type="line"/>
+      <point x="598" y="1712" type="line"/>
+      <point x="1014" y="1712" type="line"/>
+    </contour>
+  </outline>
+</glyph>

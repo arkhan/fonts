@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0432" format="1">
+  <advance width="1126"/>
+  <unicode hex="0432"/>
+  <outline>
+    <contour>
+      <point x="526" y="-18" type="qcurve" smooth="yes"/>
+      <point x="424" y="-18"/>
+      <point x="225" y="-3"/>
+      <point x="125" y="12" type="qcurve"/>
+      <point x="125" y="1006" type="line"/>
+      <point x="336" y="1034"/>
+      <point x="547" y="1034" type="qcurve" smooth="yes"/>
+      <point x="777" y="1034"/>
+      <point x="993" y="907"/>
+      <point x="993" y="784" type="qcurve" smooth="yes"/>
+      <point x="993" y="744"/>
+      <point x="970" y="669"/>
+      <point x="922" y="606"/>
+      <point x="850" y="553"/>
+      <point x="800" y="537" type="qcurve"/>
+      <point x="850" y="531"/>
+      <point x="938" y="495"/>
+      <point x="1005" y="437"/>
+      <point x="1044" y="354"/>
+      <point x="1044" y="303" type="qcurve" smooth="yes"/>
+      <point x="1044" y="139"/>
+      <point x="779" y="-18"/>
+    </contour>
+    <contour>
+      <point x="741" y="739" type="qcurve" smooth="yes"/>
+      <point x="741" y="795"/>
+      <point x="643" y="852"/>
+      <point x="546" y="852" type="qcurve" smooth="yes"/>
+      <point x="485" y="852"/>
+      <point x="405" y="849"/>
+      <point x="365" y="844" type="qcurve"/>
+      <point x="365" y="608" type="line"/>
+      <point x="538" y="608" type="line" smooth="yes"/>
+      <point x="602" y="608"/>
+      <point x="674" y="627"/>
+      <point x="719" y="660"/>
+      <point x="741" y="709"/>
+    </contour>
+    <contour>
+      <point x="557" y="166" type="qcurve" smooth="yes"/>
+      <point x="670" y="166"/>
+      <point x="784" y="242"/>
+      <point x="784" y="307" type="qcurve" smooth="yes"/>
+      <point x="784" y="369"/>
+      <point x="676" y="438"/>
+      <point x="556" y="438" type="qcurve" smooth="yes"/>
+      <point x="365" y="438" type="line"/>
+      <point x="365" y="180" type="line"/>
+      <point x="413" y="172"/>
+      <point x="503" y="166"/>
+    </contour>
+  </outline>
+</glyph>

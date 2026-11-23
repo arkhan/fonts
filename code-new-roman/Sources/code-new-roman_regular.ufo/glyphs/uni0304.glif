@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0304" format="1">
+  <advance width="1126"/>
+  <unicode hex="0304"/>
+  <outline>
+    <contour>
+      <point x="563" y="1448" type="move" name="Anchor-12"/>
+    </contour>
+    <contour>
+      <point x="563" y="1225" type="move" name="_Anchor-12"/>
+    </contour>
+    <contour>
+      <point x="563" y="1225" type="move" name="_Anchor-3"/>
+    </contour>
+    <contour>
+      <point x="563" y="1225" type="move" name="_Anchor-0"/>
+    </contour>
+    <component base="macron"/>
+  </outline>
+</glyph>

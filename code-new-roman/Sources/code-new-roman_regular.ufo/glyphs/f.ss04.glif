@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="f.ss04" format="1">
+  <advance width="1126"/>
+  <outline>
+    <contour>
+      <point x="1051" y="1251" type="line"/>
+      <point x="914" y="1280"/>
+      <point x="815" y="1280" type="qcurve" smooth="yes"/>
+      <point x="580" y="1280"/>
+      <point x="580" y="1034" type="qcurve" smooth="yes"/>
+      <point x="580" y="858" type="line"/>
+      <point x="1020" y="858" type="line"/>
+      <point x="1020" y="713" type="line"/>
+      <point x="580" y="713" type="line"/>
+      <point x="580" y="141" type="line"/>
+      <point x="911" y="141" type="line"/>
+      <point x="911" y="0" type="line"/>
+      <point x="113" y="0" type="line"/>
+      <point x="113" y="141" type="line"/>
+      <point x="403" y="141" type="line"/>
+      <point x="403" y="713" type="line"/>
+      <point x="80" y="713" type="line"/>
+      <point x="80" y="858" type="line"/>
+      <point x="403" y="858" type="line"/>
+      <point x="403" y="1024" type="line" smooth="yes"/>
+      <point x="403" y="1425"/>
+      <point x="821" y="1425" type="qcurve" smooth="yes"/>
+      <point x="925" y="1425"/>
+      <point x="1051" y="1401" type="qcurve"/>
+    </contour>
+  </outline>
+</glyph>

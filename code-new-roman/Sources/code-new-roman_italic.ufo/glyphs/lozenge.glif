@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lozenge" format="1">
+  <advance width="1126"/>
+  <unicode hex="25CA"/>
+  <outline>
+    <contour>
+      <point x="551" y="0" type="line"/>
+      <point x="381" y="0" type="line"/>
+      <point x="111" y="659" type="line"/>
+      <point x="633" y="1307" type="line"/>
+      <point x="803" y="1307" type="line"/>
+      <point x="1071" y="647" type="line"/>
+    </contour>
+    <contour>
+      <point x="309" y="653" type="line"/>
+      <point x="498" y="176" type="line"/>
+      <point x="872" y="653" type="line"/>
+      <point x="684" y="1130" type="line"/>
+    </contour>
+  </outline>
+</glyph>

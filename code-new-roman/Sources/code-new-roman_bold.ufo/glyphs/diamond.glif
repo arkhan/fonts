@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="diamond" format="1">
+  <advance width="1126"/>
+  <unicode hex="2666"/>
+  <outline>
+    <contour>
+      <point x="1093" y="645" type="qcurve"/>
+      <point x="948" y="493"/>
+      <point x="678" y="165"/>
+      <point x="563" y="-17" type="qcurve"/>
+      <point x="448" y="165"/>
+      <point x="178" y="493"/>
+      <point x="33" y="645" type="qcurve"/>
+      <point x="178" y="797"/>
+      <point x="448" y="1125"/>
+      <point x="563" y="1307" type="qcurve"/>
+      <point x="678" y="1125"/>
+      <point x="948" y="797"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="glyph1056" format="1">
+  <advance width="1126"/>
+  <outline>
+    <contour>
+      <point x="563" y="1675" type="move" name="_Anchor-5"/>
+    </contour>
+    <component base="uni035D" yOffset="417"/>
+  </outline>
+</glyph>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="N.superior" format="1">
+  <advance width="1126"/>
+  <outline>
+    <contour>
+      <point x="918" y="1045" type="line"/>
+      <point x="782" y="1045" type="line"/>
+      <point x="670" y="1426" type="line"/>
+      <point x="619" y="1620" type="line"/>
+      <point x="561" y="1258" type="line"/>
+      <point x="518" y="1045" type="line"/>
+      <point x="417" y="1045" type="line"/>
+      <point x="551" y="1712" type="line"/>
+      <point x="686" y="1712" type="line"/>
+      <point x="802" y="1321" type="line"/>
+      <point x="851" y="1133" type="line"/>
+      <point x="913" y="1523" type="line"/>
+      <point x="951" y="1712" type="line"/>
+      <point x="1052" y="1712" type="line"/>
+    </contour>
+  </outline>
+</glyph>

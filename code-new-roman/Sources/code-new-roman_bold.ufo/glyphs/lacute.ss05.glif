@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lacute.ss05" format="1">
+  <advance width="1126"/>
+  <outline>
+    <component base="l.ss05"/>
+    <component base="glyph319" xOffset="82" yOffset="41"/>
+  </outline>
+</glyph>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFB02" format="1">
+  <advance width="1126"/>
+  <unicode hex="FB02"/>
+  <outline>
+    <contour>
+      <point x="979" y="0" type="line"/>
+      <point x="739" y="0" type="line"/>
+      <point x="739" y="1233" type="line"/>
+      <point x="725" y="1236"/>
+      <point x="679" y="1239"/>
+      <point x="657" y="1239" type="qcurve" smooth="yes"/>
+      <point x="539" y="1239"/>
+      <point x="430" y="1138"/>
+      <point x="430" y="1024" type="qcurve" smooth="yes"/>
+      <point x="430" y="913" type="line"/>
+      <point x="612" y="913" type="line"/>
+      <point x="612" y="723" type="line"/>
+      <point x="430" y="723" type="line"/>
+      <point x="430" y="0" type="line"/>
+      <point x="190" y="0" type="line"/>
+      <point x="190" y="723" type="line"/>
+      <point x="33" y="723" type="line"/>
+      <point x="33" y="913" type="line"/>
+      <point x="190" y="913" type="line"/>
+      <point x="190" y="1020" type="line" smooth="yes"/>
+      <point x="190" y="1130"/>
+      <point x="257" y="1286"/>
+      <point x="379" y="1386"/>
+      <point x="552" y="1432"/>
+      <point x="659" y="1432" type="qcurve" smooth="yes"/>
+      <point x="740" y="1432"/>
+      <point x="898" y="1415"/>
+      <point x="979" y="1397" type="qcurve"/>
+    </contour>
+    <contour>
+      <point x="0" y="1016" type="move" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

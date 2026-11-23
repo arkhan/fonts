@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>familyName</key>
+    <string>Code New Roman</string>
+    <key>styleName</key>
+    <string>Bold</string>
+    <key>styleMapFamilyName</key>
+    <string>Code New Roman Bold</string>
+    <key>versionMajor</key>
+    <integer>1</integer>
+    <key>versionMinor</key>
+    <integer>508</integer>
+    <key>copyright</key>
+    <string>© 2014 Sam Radian. All Rights Reserved.</string>
+    <key>trademark</key>
+    <string>Code New Roman is either a registered trademark or a trademark of Code New Roman font family in the Sri Lanka and/or other countries.</string>
+    <key>unitsPerEm</key>
+    <integer>2048</integer>
+    <key>capHeight</key>
+    <integer>1307</integer>
+    <key>xHeight</key>
+    <integer>1016</integer>
+    <key>ascender</key>
+    <integer>1521</integer>
+    <key>descender</key>
+    <integer>-527</integer>
+    <key>italicAngle</key>
+    <real>0</real>
+    <key>note</key>
+    <string></string>
+    <key>openTypeHeadCreated</key>
+    <string>2014/10/02 19:00:27</string>
+    <key>openTypeHheaAscender</key>
+    <integer>1521</integer>
+    <key>openTypeHheaDescender</key>
+    <integer>-527</integer>
+    <key>openTypeHheaLineGap</key>
+    <integer>350</integer>
+    <key>openTypeNameDesigner</key>
+    <string>Sam Radian</string>
+    <key>openTypeNameDesignerURL</key>
+    <string>http://fb.com/sam.radian</string>
+    <key>openTypeNameManufacturer</key>
+    <string>Code New Roman</string>
+    <key>openTypeNameManufacturerURL</key>
+    <string>http://smallapp.wordpress.com/code-new-roman/</string>
+    <key>openTypeNameLicense</key>
+    <string>IMPORTANT Code New Roman LICENSE TERMS&#13;
+&#13;
+This font is freeware; you may redistribute and/or modify it under the terms of below,&#13;
+1. Integrates modify from Code New Roman.otf.&#13;
+2. Integrates/includes/aggregates Code New Roman.otf. into a proprietary executable installer, such as Windows font weaver.&#13;
+3. Links to http://fb.com/Code.New.Roman&#13;
+This guarantees your right to use, modify, and redistribute this font under certain conditions.&#13;
+You may use this  font is included to display and print content. You may also can,&#13;
+(i) embed this font in content as permitted by the embedding restrictions included in this font; and &#13;
+(ii) temporarily download this font to a printer or other output device to help print content.&#13;
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL v1.1&#13;
+&#13;
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the OFL License for more details.&#13;
+&#13;
+Designer: SamRadian@gmail.com</string>
+    <key>openTypeNameLicenseURL</key>
+    <string>http://scripts.sil.org/OFL</string>
+    <key>openTypeNameVersion</key>
+    <string>Version 1.508 October 19, 2014</string>
+    <key>openTypeNameUniqueID</key>
+    <string>Code New Roman Bold:Version 1.508</string>
+    <key>openTypeNameDescription</key>
+    <string>Code New Roman is aimed for use in programming environments and other circumstances where a monospaced font is specified. All characters have the same width, like old typewriters, making it a good choice for personal and business correspondance. This font improved and based on Mac OS Western New Roman, MONACO, Windows Consolas/Lusida Consolas, ABeeZee and Bitstream Vera Sans Mono.This font display allowed a design with proportions closer to normal text than traditional monospaced fonts like Courier. This allows for more comfortably reading of extended text on screen. OpenType features include hanging or lining numerals; slashed, dotted and normal zeros; and alternative shapes for a number of lowercase letters. The look of text can be tuned to personal taste by varying the number of bars and waves.</string>
+    <key>openTypeOS2Panose</key>
+    <array>
+      <integer>2</integer>
+      <integer>11</integer>
+      <integer>7</integer>
+      <integer>9</integer>
+      <integer>2</integer>
+      <integer>2</integer>
+      <integer>4</integer>
+      <integer>3</integer>
+      <integer>2</integer>
+      <integer>4</integer>
+    </array>
+    <key>openTypeOS2WidthClass</key>
+    <integer>5</integer>
+    <key>openTypeOS2WeightClass</key>
+    <integer>700</integer>
+    <key>openTypeOS2VendorID</key>
+    <string>CNR </string>
+    <key>openTypeOS2FamilyClass</key>
+    <array>
+      <integer>8</integer>
+      <integer>9</integer>
+    </array>
+    <key>openTypeOS2Type</key>
+    <array/>
+    <key>openTypeOS2TypoAscender</key>
+    <integer>1521</integer>
+    <key>openTypeOS2TypoDescender</key>
+    <integer>-527</integer>
+    <key>openTypeOS2TypoLineGap</key>
+    <integer>350</integer>
+    <key>openTypeOS2WinAscent</key>
+    <integer>1884</integer>
+    <key>openTypeOS2WinDescent</key>
+    <integer>514</integer>
+    <key>openTypeOS2SubscriptXSize</key>
+    <integer>1433</integer>
+    <key>openTypeOS2SubscriptYSize</key>
+    <integer>1331</integer>
+    <key>openTypeOS2SubscriptXOffset</key>
+    <integer>0</integer>
+    <key>openTypeOS2SubscriptYOffset</key>
+    <integer>286</integer>
+    <key>openTypeOS2SuperscriptXSize</key>
+    <integer>1433</integer>
+    <key>openTypeOS2SuperscriptYSize</key>
+    <integer>1331</integer>
+    <key>openTypeOS2SuperscriptXOffset</key>
+    <integer>0</integer>
+    <key>openTypeOS2SuperscriptYOffset</key>
+    <integer>976</integer>
+    <key>openTypeOS2StrikeoutSize</key>
+    <integer>194</integer>
+    <key>openTypeOS2StrikeoutPosition</key>
+    <integer>512</integer>
+    <key>openTypeOS2UnicodeRanges</key>
+    <array>
+      <integer>0</integer>
+      <integer>1</integer>
+      <integer>2</integer>
+      <integer>3</integer>
+      <integer>4</integer>
+      <integer>5</integer>
+      <integer>6</integer>
+      <integer>7</integer>
+      <integer>9</integer>
+      <integer>24</integer>
+      <integer>29</integer>
+      <integer>30</integer>
+      <integer>31</integer>
+      <integer>32</integer>
+      <integer>33</integer>
+      <integer>34</integer>
+      <integer>35</integer>
+      <integer>36</integer>
+      <integer>37</integer>
+      <integer>38</integer>
+      <integer>39</integer>
+      <integer>42</integer>
+      <integer>43</integer>
+      <integer>44</integer>
+      <integer>45</integer>
+      <integer>46</integer>
+      <integer>47</integer>
+      <integer>62</integer>
+      <integer>64</integer>
+      <integer>67</integer>
+    </array>
+    <key>openTypeOS2CodePageRanges</key>
+    <array>
+      <integer>0</integer>
+      <integer>1</integer>
+      <integer>2</integer>
+      <integer>3</integer>
+      <integer>4</integer>
+      <integer>7</integer>
+      <integer>8</integer>
+      <integer>29</integer>
+      <integer>30</integer>
+      <integer>48</integer>
+      <integer>49</integer>
+      <integer>50</integer>
+      <integer>52</integer>
+      <integer>54</integer>
+      <integer>55</integer>
+      <integer>56</integer>
+      <integer>57</integer>
+      <integer>58</integer>
+      <integer>59</integer>
+      <integer>60</integer>
+      <integer>62</integer>
+      <integer>63</integer>
+    </array>
+    <key>postscriptFontName</key>
+    <string>CodeNewRoman-Bold</string>
+    <key>postscriptFullName</key>
+    <string>Code New Roman Bold</string>
+    <key>postscriptWeightName</key>
+    <string>Bold</string>
+    <key>postscriptUnderlineThickness</key>
+    <integer>194</integer>
+    <key>postscriptUnderlinePosition</key>
+    <integer>-314</integer>
+  </dict>
+</plist>

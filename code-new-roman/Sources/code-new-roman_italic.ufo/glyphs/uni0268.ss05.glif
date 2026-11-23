@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0268.ss05" format="1">
+  <advance width="1126"/>
+  <outline>
+    <component base="i.ss05"/>
+    <component base="glyph2670" xOffset="8"/>
+  </outline>
+</glyph>

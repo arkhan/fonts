@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni2C61.ss04" format="1">
+  <advance width="1126"/>
+  <outline>
+    <component base="l.ss04"/>
+    <component base="glyph2670" xOffset="42" yOffset="75"/>
+    <component base="glyph2670" xOffset="93" yOffset="331"/>
+  </outline>
+</glyph>

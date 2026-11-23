@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+# Generate a CSS declaration for the given font
+
+if ! type fontforge &> /dev/null; then echo "ERROR: Missing dependency: fontforge" 1>&2; exit 1; fi
+
+fullname=$1
+basename=$(basename "$fullname" .sfdir)
+
+output=$(fontforge --quiet -lang=py -script - "$fullname" <<EOF
+import fontforge;
+import sys;
+
+font = fontforge.open(sys.argv[1]);
+
+# Extract interesting informations
+print("---")
+print(font.fontname)
+print(font.familyname)
+print(font.fullname)
+print(font.os2_weight)
+print(font.italicangle)
+EOF
+) || exit 1
+
+output="${output##*---
+}"
+old_IFS="$IFS"
+IFS='
+'
+output=($output)
+IFS="$old_IFS"
+
+fontname=${output[0]}
+familyname=${output[1]}
+fullname=${output[2]}
+fontweight=${output[3]}
+slope=${output[4]}
+if [ x"$slope" = "x0.0" ]; then
+  fontstyle=normal
+else
+  fontstyle=italic
+fi
+
+cat > "Webfonts/${basename}-decl.css" <<EOF
+@font-face {
+  font-family: '${familyname}';
+  src: url('${basename}.woff2') format('woff2'),
+       url('${basename}.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+       url('${basename}.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('${basename}.svg#${fontname}') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: ${fontweight};
+  font-style: ${fontstyle};
+}
+EOF

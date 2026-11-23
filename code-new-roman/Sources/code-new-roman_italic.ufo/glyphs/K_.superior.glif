@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="K.superior" format="1">
+  <advance width="1126"/>
+  <outline>
+    <contour>
+      <point x="961" y="1045" type="line"/>
+      <point x="830" y="1045" type="line"/>
+      <point x="628" y="1383" type="line"/>
+      <point x="562" y="1045" type="line"/>
+      <point x="448" y="1045" type="line"/>
+      <point x="582" y="1712" type="line"/>
+      <point x="696" y="1712" type="line"/>
+      <point x="631" y="1402" type="line"/>
+      <point x="946" y="1712" type="line"/>
+      <point x="1082" y="1712" type="line"/>
+      <point x="742" y="1390" type="line"/>
+    </contour>
+  </outline>
+</glyph>

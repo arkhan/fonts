@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="glyph337" format="1">
+  <advance width="1126"/>
+  <outline>
+    <contour>
+      <point x="593" y="1761" type="move" name="Anchor-12"/>
+    </contour>
+    <contour>
+      <point x="593" y="1436" type="move" name="_Anchor-12"/>
+    </contour>
+    <contour>
+      <point x="593" y="1436" type="move" name="_Anchor-0"/>
+    </contour>
+    <contour>
+      <point x="756" y="1671" type="line"/>
+      <point x="467" y="1446" type="line"/>
+      <point x="250" y="1446" type="line"/>
+      <point x="465" y="1671" type="line"/>
+    </contour>
+    <contour>
+      <point x="1180" y="1671" type="line"/>
+      <point x="860" y="1446" type="line"/>
+      <point x="637" y="1446" type="line"/>
+      <point x="870" y="1671" type="line"/>
+    </contour>
+    <contour>
+      <point x="0" y="1307" type="move" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

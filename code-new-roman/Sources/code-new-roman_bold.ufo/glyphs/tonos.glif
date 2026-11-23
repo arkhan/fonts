@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tonos" format="1">
+  <advance width="1126"/>
+  <unicode hex="0384"/>
+  <outline>
+    <contour>
+      <point x="678" y="1137" type="line"/>
+      <point x="444" y="1137" type="line"/>
+      <point x="586" y="1434" type="line"/>
+      <point x="881" y="1434" type="line"/>
+    </contour>
+    <contour>
+      <point x="0" y="1016" type="move" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="glyph1563" format="1">
+  <advance width="1126"/>
+  <outline>
+    <component base="dotlessi.ss05"/>
+    <component base="glyph2670" xOffset="8"/>
+  </outline>
+</glyph>

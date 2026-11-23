@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="P.superior" format="1">
+  <advance width="1126"/>
+  <outline>
+    <contour>
+      <point x="836" y="1499" type="qcurve" smooth="yes"/>
+      <point x="836" y="1447"/>
+      <point x="798" y="1359"/>
+      <point x="724" y="1295"/>
+      <point x="613" y="1259"/>
+      <point x="540" y="1259" type="qcurve" smooth="yes"/>
+      <point x="470" y="1259" type="line"/>
+      <point x="470" y="1045" type="line"/>
+      <point x="319" y="1045" type="line"/>
+      <point x="319" y="1712" type="line"/>
+      <point x="537" y="1712" type="line" smooth="yes"/>
+      <point x="610" y="1712"/>
+      <point x="721" y="1684"/>
+      <point x="797" y="1629"/>
+      <point x="836" y="1550"/>
+    </contour>
+    <contour>
+      <point x="679" y="1491" type="qcurve" smooth="yes"/>
+      <point x="679" y="1515"/>
+      <point x="662" y="1556"/>
+      <point x="627" y="1584"/>
+      <point x="574" y="1600"/>
+      <point x="538" y="1600" type="qcurve" smooth="yes"/>
+      <point x="470" y="1600" type="line"/>
+      <point x="470" y="1371" type="line"/>
+      <point x="541" y="1371" type="line" smooth="yes"/>
+      <point x="575" y="1371"/>
+      <point x="626" y="1388"/>
+      <point x="661" y="1420"/>
+      <point x="679" y="1464"/>
+    </contour>
+  </outline>
+</glyph>

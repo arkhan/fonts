@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni20AE" format="1">
+  <advance width="1126"/>
+  <unicode hex="20AE"/>
+  <outline>
+    <contour>
+      <point x="941" y="528" type="line"/>
+      <point x="653" y="406" type="line"/>
+      <point x="653" y="0" type="line"/>
+      <point x="473" y="0" type="line"/>
+      <point x="473" y="329" type="line"/>
+      <point x="187" y="208" type="line"/>
+      <point x="187" y="345" type="line"/>
+      <point x="473" y="466" type="line"/>
+      <point x="473" y="677" type="line"/>
+      <point x="187" y="556" type="line"/>
+      <point x="187" y="693" type="line"/>
+      <point x="473" y="814" type="line"/>
+      <point x="473" y="1155" type="line"/>
+      <point x="86" y="1155" type="line"/>
+      <point x="86" y="1307" type="line"/>
+      <point x="1040" y="1307" type="line"/>
+      <point x="1040" y="1155" type="line"/>
+      <point x="653" y="1155" type="line"/>
+      <point x="653" y="891" type="line"/>
+      <point x="941" y="1013" type="line"/>
+      <point x="941" y="876" type="line"/>
+      <point x="653" y="754" type="line"/>
+      <point x="653" y="543" type="line"/>
+      <point x="941" y="665" type="line"/>
+    </contour>
+  </outline>
+</glyph>

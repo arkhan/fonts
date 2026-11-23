@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni1E39.ss05" format="1">
+  <advance width="1126"/>
+  <outline>
+    <component base="l.ss05"/>
+    <component base="dotbelowcomb" xOffset="28"/>
+    <component base="macron" xOffset="31" yOffset="374"/>
+  </outline>
+</glyph>

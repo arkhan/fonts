@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="W.superior" format="1">
+  <advance width="1126"/>
+  <outline>
+    <contour>
+      <point x="857" y="1712" type="line"/>
+      <point x="808" y="1045" type="line"/>
+      <point x="677" y="1045" type="line"/>
+      <point x="587" y="1282" type="line"/>
+      <point x="562" y="1358" type="line"/>
+      <point x="535" y="1276" type="line"/>
+      <point x="451" y="1045" type="line"/>
+      <point x="317" y="1045" type="line"/>
+      <point x="267" y="1712" type="line"/>
+      <point x="367" y="1712" type="line"/>
+      <point x="396" y="1258" type="line"/>
+      <point x="404" y="1134" type="line"/>
+      <point x="433" y="1240" type="line"/>
+      <point x="522" y="1487" type="line"/>
+      <point x="601" y="1487" type="line"/>
+      <point x="703" y="1222" type="line"/>
+      <point x="733" y="1134" type="line"/>
+      <point x="737" y="1261" type="line"/>
+      <point x="764" y="1712" type="line"/>
+    </contour>
+  </outline>
+</glyph>

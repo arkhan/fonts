@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0348" format="1">
+  <advance width="1126"/>
+  <unicode hex="0348"/>
+  <outline>
+    <contour>
+      <point x="503" y="-560" type="move" name="Anchor-13"/>
+    </contour>
+    <contour>
+      <point x="563" y="16" type="move" name="_Anchor-13"/>
+    </contour>
+    <contour>
+      <point x="563" y="16" type="move" name="_Anchor-2"/>
+    </contour>
+    <component base="uni030E" xOffset="-318" yOffset="-1587"/>
+  </outline>
+</glyph>

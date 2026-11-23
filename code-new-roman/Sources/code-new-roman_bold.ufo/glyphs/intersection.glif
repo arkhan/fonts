@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="intersection" format="1">
+  <advance width="1126"/>
+  <unicode hex="2229"/>
+  <outline>
+    <contour>
+      <point x="98" y="534" type="line" smooth="yes"/>
+      <point x="98" y="659"/>
+      <point x="163" y="848"/>
+      <point x="286" y="974"/>
+      <point x="461" y="1038"/>
+      <point x="571" y="1038" type="qcurve" smooth="yes"/>
+      <point x="694" y="1038"/>
+      <point x="870" y="974"/>
+      <point x="979" y="854"/>
+      <point x="1028" y="682"/>
+      <point x="1028" y="575" type="qcurve" smooth="yes"/>
+      <point x="1028" y="0" type="line"/>
+      <point x="803" y="0" type="line"/>
+      <point x="803" y="555" type="line" smooth="yes"/>
+      <point x="803" y="623"/>
+      <point x="779" y="727"/>
+      <point x="720" y="800"/>
+      <point x="630" y="837"/>
+      <point x="562" y="837" type="qcurve" smooth="yes"/>
+      <point x="498" y="837"/>
+      <point x="411" y="805"/>
+      <point x="352" y="735"/>
+      <point x="323" y="624"/>
+      <point x="323" y="545" type="qcurve" smooth="yes"/>
+      <point x="323" y="0" type="line"/>
+      <point x="98" y="0" type="line"/>
+    </contour>
+  </outline>
+</glyph>

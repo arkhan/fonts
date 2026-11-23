@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="L.superior" format="1">
+  <advance width="1126"/>
+  <outline>
+    <contour>
+      <point x="880" y="1045" type="line"/>
+      <point x="458" y="1045" type="line"/>
+      <point x="592" y="1712" type="line"/>
+      <point x="708" y="1712" type="line"/>
+      <point x="593" y="1139" type="line"/>
+      <point x="899" y="1139" type="line"/>
+    </contour>
+  </outline>
+</glyph>

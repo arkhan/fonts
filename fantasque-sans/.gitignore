@@ -1,0 +1,14 @@
+TeX
+*.zip
+*.tar.gz
+*.deb
+*.rpm
+*~
+Specimen/*.svg
+Sources/*.sfd-*
+Variants
+
+*.pyc
+.font-build/
+export/
+/.config/

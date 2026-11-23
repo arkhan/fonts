@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="glyph328" format="1">
+  <advance width="1126"/>
+  <outline>
+    <contour>
+      <point x="563" y="1780" type="move" name="Anchor-12"/>
+    </contour>
+    <contour>
+      <point x="563" y="1426" type="move" name="_Anchor-12"/>
+    </contour>
+    <contour>
+      <point x="563" y="1426" type="move" name="_Anchor-0"/>
+    </contour>
+    <contour>
+      <point x="479" y="1552" type="qcurve" smooth="yes"/>
+      <point x="479" y="1524"/>
+      <point x="458" y="1474"/>
+      <point x="420" y="1437"/>
+      <point x="370" y="1415"/>
+      <point x="342" y="1415" type="qcurve" smooth="yes"/>
+      <point x="313" y="1415"/>
+      <point x="264" y="1437"/>
+      <point x="226" y="1474"/>
+      <point x="205" y="1524"/>
+      <point x="205" y="1552" type="qcurve" smooth="yes"/>
+      <point x="205" y="1580"/>
+      <point x="226" y="1631"/>
+      <point x="264" y="1668"/>
+      <point x="313" y="1690"/>
+      <point x="342" y="1690" type="qcurve" smooth="yes"/>
+      <point x="370" y="1690"/>
+      <point x="420" y="1668"/>
+      <point x="458" y="1631"/>
+      <point x="479" y="1580"/>
+    </contour>
+    <contour>
+      <point x="921" y="1552" type="qcurve" smooth="yes"/>
+      <point x="921" y="1524"/>
+      <point x="899" y="1474"/>
+      <point x="863" y="1437"/>
+      <point x="812" y="1415"/>
+      <point x="784" y="1415" type="qcurve" smooth="yes"/>
+      <point x="756" y="1415"/>
+      <point x="706" y="1437"/>
+      <point x="669" y="1474"/>
+      <point x="647" y="1524"/>
+      <point x="647" y="1552" type="qcurve" smooth="yes"/>
+      <point x="647" y="1580"/>
+      <point x="669" y="1631"/>
+      <point x="706" y="1668"/>
+      <point x="756" y="1690"/>
+      <point x="784" y="1690" type="qcurve" smooth="yes"/>
+      <point x="812" y="1690"/>
+      <point x="863" y="1668"/>
+      <point x="899" y="1631"/>
+      <point x="921" y="1580"/>
+    </contour>
+    <contour>
+      <point x="0" y="1307" type="move" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

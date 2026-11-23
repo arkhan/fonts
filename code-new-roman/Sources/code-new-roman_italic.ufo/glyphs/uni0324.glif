@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0324" format="1">
+  <advance width="1126"/>
+  <unicode hex="0324"/>
+  <outline>
+    <contour>
+      <point x="503" y="-400" type="move" name="Anchor-13"/>
+    </contour>
+    <contour>
+      <point x="563" y="-85" type="move" name="_Anchor-13"/>
+    </contour>
+    <contour>
+      <point x="563" y="-85" type="move" name="_Anchor-2"/>
+    </contour>
+    <component base="dieresis" xOffset="-285" yOffset="-1487"/>
+  </outline>
+</glyph>

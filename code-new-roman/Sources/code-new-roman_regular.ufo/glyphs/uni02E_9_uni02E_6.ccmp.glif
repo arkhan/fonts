@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni02E9_uni02E6.ccmp" format="1">
+  <advance width="1126"/>
+  <outline>
+    <contour>
+      <point x="634" y="0" type="line"/>
+      <point x="478" y="0" type="line"/>
+      <point x="478" y="982" type="line"/>
+      <point x="150" y="0" type="line"/>
+      <point x="36" y="50" type="line"/>
+      <point x="478" y="1368" type="line"/>
+      <point x="478" y="1466" type="line"/>
+      <point x="634" y="1466" type="line"/>
+    </contour>
+  </outline>
+</glyph>

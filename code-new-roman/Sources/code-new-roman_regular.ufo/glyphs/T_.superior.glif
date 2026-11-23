@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="T.superior" format="1">
+  <advance width="1126"/>
+  <outline>
+    <contour>
+      <point x="830" y="1629" type="line"/>
+      <point x="616" y="1629" type="line"/>
+      <point x="616" y="1045" type="line"/>
+      <point x="510" y="1045" type="line"/>
+      <point x="510" y="1629" type="line"/>
+      <point x="296" y="1629" type="line"/>
+      <point x="296" y="1712" type="line"/>
+      <point x="830" y="1712" type="line"/>
+    </contour>
+  </outline>
+</glyph>

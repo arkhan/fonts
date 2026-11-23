@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni031A" format="1">
+  <advance width="1126"/>
+  <unicode hex="031A"/>
+  <outline>
+    <contour>
+      <point x="593" y="1191" type="move" name="_Anchor-1"/>
+    </contour>
+    <contour>
+      <point x="374" y="1363" type="line"/>
+      <point x="374" y="1467" type="line"/>
+      <point x="752" y="1467" type="line"/>
+      <point x="752" y="1091" type="line"/>
+      <point x="646" y="1091" type="line"/>
+      <point x="646" y="1363" type="line"/>
+    </contour>
+  </outline>
+</glyph>
