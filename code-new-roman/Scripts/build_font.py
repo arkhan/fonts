@@ -18,6 +18,7 @@ import psMat
 
 LIGATURIZER_DIR = os.environ.get('LIGATURIZER_DIR', '/opt/Ligaturizer')
 sys.path.insert(0, LIGATURIZER_DIR)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))  # our curated ligatures.py wins over upstream's
 from ligaturize import LigatureCreator  # noqa: E402
 from ligatures import ligatures  # noqa: E402
 

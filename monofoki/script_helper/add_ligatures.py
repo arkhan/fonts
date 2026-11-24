@@ -19,6 +19,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LIGA_DIR = os.environ.get('LIGATURIZER_DIR', os.path.abspath(os.path.join(ROOT, '..', '..')))
 FIRA_DIR = os.environ.get('FIRA_DIR', os.path.join(LIGA_DIR, 'fonts/fira/distr/otf'))
 sys.path.insert(0, LIGA_DIR)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))  # our curated ligatures.py wins over upstream's
 
 from ligaturize import LigatureCreator  # noqa: E402
 from ligatures import ligatures  # noqa: E402

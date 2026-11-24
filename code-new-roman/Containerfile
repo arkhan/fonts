@@ -9,15 +9,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 ARG CASCADIA_VERSION=2407.24
-ARG FIRA_VERSION=6.2
+# commit with distr/otf (glyph names like hyphen_greater.liga); the release zip TTFs lack most of them
+ARG FIRA_COMMIT=e9943d2d631a4558613d7a77c58ed1d3cb790992
 ARG NERD_FONTS_VERSION=v3.5.1
 
 # Donor fonts and Ligaturizer scripts (LigatureCreator, ligatures.py)
 RUN mkdir -p /opt/donors /opt/fira \
     && curl -fsSL -o /tmp/cascadia.zip https://github.com/microsoft/cascadia-code/releases/download/v${CASCADIA_VERSION}/CascadiaCode-${CASCADIA_VERSION}.zip \
     && unzip -q -j /tmp/cascadia.zip 'ttf/static/CascadiaCode-*.ttf' -d /opt/donors \
-    && curl -fsSL -o /tmp/fira.zip https://github.com/tonsky/FiraCode/releases/download/${FIRA_VERSION}/Fira_Code_v${FIRA_VERSION}.zip \
-    && unzip -q -j /tmp/fira.zip 'ttf/FiraCode-*.ttf' -d /opt/fira \
+    && for w in Regular Bold; do curl -fsSL -o /opt/fira/FiraCode-$w.otf https://raw.githubusercontent.com/tonsky/FiraCode/${FIRA_COMMIT}/distr/otf/FiraCode-$w.otf; done \
     && git clone --depth 1 https://github.com/ToxicFrog/Ligaturizer.git /opt/Ligaturizer \
     && mkdir -p /opt/patcher \
     && curl -fsSL -o /tmp/patcher.zip https://github.com/ryanoasis/nerd-fonts/releases/download/${NERD_FONTS_VERSION}/FontPatcher.zip \
