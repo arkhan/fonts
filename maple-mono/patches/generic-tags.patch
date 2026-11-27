@@ -1,0 +1,103 @@
+diff --git a/scripts/feature/calt/tag.py b/scripts/feature/calt/tag.py
+index 3df80ac..15bc19f 100644
+--- a/scripts/feature/calt/tag.py
++++ b/scripts/feature/calt/tag.py
+@@ -1,4 +1,5 @@
+ from scripts.feature import ast
++from scripts.feature.calt import tag_generic
+ from scripts.feature.base.clazz import cls_comma, cls_space
+ from scripts.utils.logging import logger
+ 
+@@ -298,6 +299,10 @@ def get_lookup(cls_var: ast.Clazz):
+             bg_cls_dict,
+         ),
+         # =========================================================
++        #   Generic tags: any short label in [], () or <>, see tag_generic
++        # ---------------------------------------------------------
++        tag_generic.get_lookup(),
++        # =========================================================
+         #                Mark annotation in Xcode
+         #             example: `// TODO: code review`
+         #   Limitation: the first glyph before will be overlapped
+diff --git a/scripts/feature/calt/tag_generic.py b/scripts/feature/calt/tag_generic.py
+new file mode 100644
+index 0000000..19b2516
+--- /dev/null
++++ b/scripts/feature/calt/tag_generic.py
+@@ -0,0 +1,76 @@
++"""
++Generic tags: turn any short label between delimiters into a tag, e.g. ``[T]``, ``(T)``, ``<T>``.
++
++Upstream only has tags for a fixed list of words (``[TODO]``...) plus opt-in custom tags. Here
++every character of the label becomes its background glyph (``X.bg``) and the delimiters become
++the tag ends, one glyph per cell, so it works for any label and needs no per-word glyph.
++
++Guards keep ordinary code untouched: an opening delimiter right after an identifier character
++or a closing bracket (``arr[i]``, ``f(x)``, ``List<T>``) never starts a tag, and neither does a
++tag directly followed by an opening bracket (``[text](url)``).
++"""
++
++from __future__ import annotations
++
++from scripts.feature import ast
++
++# Longest label (in characters) that becomes a tag; each length needs its own rules.
++MAX_LABEL = 12
++
++_UPPER = [chr(c) for c in range(ord("A"), ord("Z") + 1)]
++_LOWER = [c.lower() for c in _UPPER]
++_DIGITS = "zero one two three four five six seven eight nine".split()
++_SYMBOLS = ["underscore", "hyphen"]
++
++# (opening glyph, closing glyph, opening end, closing end, accepts lowercase)
++# Lowercase is limited to square brackets: `(x)` and `<div>` are everyday code.
++_PAIRS = [
++    ("bracketleft", "bracketright", "block_start.bg", "block_end.bg", True),
++    ("parenleft", "parenright", "circle_start.bg", "circle_end.bg", False),
++    ("less", "greater", "sharp_start.bg", "sharp_end.bg", False),
++]
++
++# Characters after which an opening delimiter is part of an expression, not a tag.
++_NOT_BEFORE = [*_UPPER, *_LOWER, *_DIGITS, "underscore", "parenright", "bracketright", "braceright", "greater", "period"]
++_NOT_AFTER = ["parenleft", "bracketleft", "braceleft", *_UPPER, *_LOWER, *_DIGITS, "underscore"]
++
++
++def _cls(name: str, glyphs: list[str]) -> ast.Line:
++    return ast.Line(f"@{name} = [{' '.join(glyphs)}];")
++
++
++def _pair_rules(index: int, open_g: str, close_g: str, open_bg: str, close_bg: str, any_case: bool):
++    body = f"@TagBody{'Any' if any_case else 'Up'}"
++    body_bg = f"@TagBg{'Any' if any_case else 'Up'}"
++    ignores: list[ast.Line] = []
++    subs: list[ast.Line] = []
++    for n in range(1, MAX_LABEL + 1):
++        label = " ".join([body] * n)
++        ignores.append(ast.Line(f"ignore sub @TagNotBefore {open_g}' {label} {close_g};"))
++        ignores.append(ast.Line(f"ignore sub {open_g}' {label} {close_g} @TagNotAfter;"))
++        # Rules run left to right, each one seeing the glyphs already replaced to its left.
++        subs.append(ast.Line(f"sub {open_g}' {label} {close_g} by {open_bg};"))
++        for i in range(1, n + 1):
++            back = " ".join([open_bg, *(["@TagBgAll"] * (i - 1))])
++            ahead = " ".join([*([body] * (n - i)), close_g])
++            subs.append(ast.Line(f"sub {back} {body}' {ahead} by {body_bg};"))
++        back = " ".join([open_bg, *(["@TagBgAll"] * n)])
++        subs.append(ast.Line(f"sub {back} {close_g}' by {close_bg};"))
++    return ast.Lookup(f"tag_generic_{index}", f"{open_g} .. {close_g}", [*ignores, *subs])
++
++
++def get_lookup() -> list[ast.FeatureContent]:
++    body_any = [*_UPPER, *_LOWER, *_DIGITS, *_SYMBOLS]
++    body_up = [*_UPPER, *_DIGITS, *_SYMBOLS]
++    bg = lambda names: [f"{n}.bg" for n in names]  # noqa: E731
++    bg_any = bg([*_UPPER, *_UPPER, *_DIGITS, *_SYMBOLS])  # a..z share the capital's glyph
++    return [
++        _cls("TagBodyAny", body_any),
++        _cls("TagBgAny", bg_any),
++        _cls("TagBodyUp", body_up),
++        _cls("TagBgUp", bg(body_up)),
++        _cls("TagBgAll", bg(body_up)),
++        _cls("TagNotBefore", _NOT_BEFORE),
++        _cls("TagNotAfter", _NOT_AFTER),
++        *(_pair_rules(i, *pair) for i, pair in enumerate(_PAIRS)),
++    ]

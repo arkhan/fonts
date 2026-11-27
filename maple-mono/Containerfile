@@ -1,0 +1,20 @@
+# Maple Mono SL (slim) with Nerd Font mono icons, CJK and generic tags. Run via ./build.sh
+FROM docker.io/library/python:3.12-slim-bookworm
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        ca-certificates git git-lfs build-essential fontforge python3-fontforge \
+    && rm -rf /var/lib/apt/lists/*
+
+# Upstream, pinned. The patch and tools in this repo are written against this commit.
+ARG MAPLE_COMMIT=417c37217e6be06eebfe44d65147954f744ed653
+RUN git clone -q https://github.com/subframe7536/maple-font /opt/maple \
+    && git -C /opt/maple checkout -q ${MAPLE_COMMIT} \
+    && pip install --no-cache-dir -r /opt/maple/requirements.txt uharfbuzz
+
+COPY patches /opt/mods/patches
+COPY tools /opt/mods/tools
+COPY build_all.sh /opt/mods/build_all.sh
+
+ENV LANG=C.UTF-8 PYTHONIOENCODING=utf-8
+WORKDIR /opt/maple
+ENTRYPOINT ["/opt/mods/build_all.sh"]
